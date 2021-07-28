@@ -11,7 +11,7 @@ import com.springboot.fundraising.repository.Donor;
 @Controller
 public class HomeController {
 	
-	@RequestMapping("/")
+	@RequestMapping("/home")
 	public String home() {
 		
 		return "home";
@@ -27,6 +27,11 @@ public class HomeController {
 	public String register() {
 		
 		return "register";
+	}
+	@RequestMapping("/error")
+	public String error() {
+		
+		return "error";
 	}
 	
 	@RequestMapping(path="/donorform", method = RequestMethod.POST)
