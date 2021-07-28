@@ -49,5 +49,5 @@ jobs:
       with:
         app-name: 'findoteam3'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_914f5eaea8634313803aed222757d1fe }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_26b375a857b74a67b5d020419f26e13c }}
         package: '*.jar'
