@@ -25,11 +25,17 @@ public class HomeController {
 		return "home";
 	}
 	
-	@RequestMapping("/login")
-	public String login() {
-		
-		return "login";
+	@GetMapping("/login")
+	public ModelAndView login() {
+	   ModelAndView mv=new ModelAndView("login");
+	   return mv;
 	}
+	
+//	@RequestMapping("/login")
+//	public String login() {
+//		
+//		return "login";
+//	}
 	
 	@RequestMapping("/register")
 	public String register() {
