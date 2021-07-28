@@ -28,11 +28,12 @@ public class HomeController {
 		
 		return "register";
 	}
-	@RequestMapping("/error")
-	public String error() {
-		
-		return "error";
-	}
+	
+//	@RequestMapping("/error")
+//	public String errorpage() {
+//		
+//		return "error";
+//	}
 	
 	@RequestMapping(path="/donorform", method = RequestMethod.POST)
 	public String donorData(@ModelAttribute("Donor") Donor donor,Model modal) {
