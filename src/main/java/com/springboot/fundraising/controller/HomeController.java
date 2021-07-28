@@ -11,7 +11,7 @@ import com.springboot.fundraising.repository.Donor;
 @Controller
 public class HomeController {
 	
-	@RequestMapping("/")
+	@RequestMapping("/home")
 	public String home() {
 		
 		return "home";
