@@ -9,9 +9,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.springboot.fundraising.repository.Donor;
 
 @Controller
+@RequestMapping("/")
 public class HomeController {
 	
-	@RequestMapping("/home")
+	@RequestMapping("/")
 	public String home() {
 		
 		return "home";
